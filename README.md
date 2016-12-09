@@ -1,17 +1,17 @@
-# _The Guardian_
+# _Quiz Page_
 
-#### _Duplicate The Guardian website using Sass, Bourbon, and Neat, 12/7/2016_
+#### _Make a quiz page using Sass, Bourbon, and Neat, 12/9/2016_
 
 #### By _**Addison Nishijima**_
 
 ## Description
 
-_Duplicate The Guardian website using Sass, Bourbon, and Neat_
+_Independent project for Sass week at Epicodus. Make a quiz page using Sass, Bourbon, and Neat that includes columns with semi-transparent background images._
 
 ## Setup/Installation Requirements
 
 * _open terminal_
-* _copy "git clone https://github.com/AddisonNishijima/sassguardian.git" and paste into terminal_
+* _copy "git clone https://github.com/AddisonNishijima/quizpage.git" and paste into terminal_
 
 ## Known Bugs
 
