@@ -116,9 +116,25 @@ header {
   height: 100%;
   display: block;
   position: relative;
-  overflow: hidden; }
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0; }
   #main-tile-1:last-child, #main-tile-2:last-child, #main-tile-3:last-child, #main-tile-4:last-child {
     margin-right: 0; }
+  #main-tile-1::after, #main-tile-2::after, #main-tile-3::after, #main-tile-4::after {
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url("../img/preacher.jpg");
+    background-size: cover;
+    background-position: center; }
   @media screen and (min-width: 600px) {
     #main-tile-1, #main-tile-2, #main-tile-3, #main-tile-4 {
       float: left;
@@ -145,14 +161,29 @@ header {
     #main-tile-2 {
       padding: 0;
       margin: 0; } }
+  #main-tile-2::after {
+    background-image: url("../img/got.jpg"); }
 
 #main-tile-3 {
   background-color: #504A4B; }
+  #main-tile-3::after {
+    background-image: url("../img/strangerthings.jpg"); }
 
 #main-tile-4 {
   background-color: green; }
+  #main-tile-4::after {
+    background-image: url("../img/twd.jpg"); }
 
 .main-header {
   text-align: center; }
+
+.play {
+  border-radius: 10px;
+  background-color: none;
+  border: solid 1px #fff;
+  font-size: 1em;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=application.css.map */

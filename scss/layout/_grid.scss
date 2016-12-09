@@ -11,7 +11,24 @@
   @include picture (100%, 100%);
   display: block;
   position: relative;
-  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  &::after {
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url('#{$path-image}/preacher.jpg');
+    background-size: cover;
+    background-position: center;
+  }
   @media screen and (min-width: 600px) {
     @include span-columns(6 of 12);
   }
@@ -49,14 +66,23 @@
     padding: 0;
     margin: 0;
   }
+  &::after {
+    background-image: url('#{$path-image}/got.jpg');
+  }
 }
 
 #main-tile-3 {
   @extend #main-tile-1;
   background-color: $darkgrey;
+  &::after {
+    background-image: url('#{$path-image}/strangerthings.jpg');
+  }
 }
 
 #main-tile-4 {
   @extend #main-tile-1;
   background-color: green;
+  &::after {
+    background-image: url('#{$path-image}/twd.jpg');
+  }
 }
