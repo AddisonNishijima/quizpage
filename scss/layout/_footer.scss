@@ -1,0 +1,21 @@
+#footer {
+  @include tile($darkgrey, 0);
+  color: $white;
+  padding: 1em;
+}
+
+#footernav{
+  @include span-columns(12 of 12);
+  @include tile($darkgrey, 0);
+  color: $white;
+}
+
+#footer-nav-1{
+  @include span-columns(6 of 12);
+  @include tile ($darkgrey);
+}
+
+#footer-nav-2{
+  @include span-columns(6 of 12);
+  @include tile ($darkgrey);
+}

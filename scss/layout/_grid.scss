@@ -1,0 +1,47 @@
+/* Grid ------------------ */
+
+#main {
+  @include outer-container();
+  @include tile ($white, 3%, 92vw);
+}
+
+#main-tile-1 {
+  @include span-columns(12);
+  @include tile (pink);
+  border-top: 1px solid pink;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  img {
+    border: solid 2px white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    width: 50%;
+  }
+}
+
+#main-tile-1:before {
+  content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('http://placekitten.com/1500/1000');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#main-tile-2 {
+  @extend #main-tile-1;
+}
