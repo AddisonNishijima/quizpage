@@ -10,38 +10,49 @@
   @include tile (pink);
   border-top: 1px solid pink;
   margin-bottom: 10px;
+  display: block;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height:100%;
   img {
     border: solid 2px white;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 10%;
-    margin-bottom: 10%;
-    width: 50%;
+    // margin-top: 10%;
+    // margin-bottom: 10%;
+    // margin-left: 10%;
+    // margin-bottom: 10%;
+    // width: 50%;
+    // z-index: 0;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    @extend h1;
   }
 }
 
-#main-tile-1:before {
-  content: ' ';
+#main-tile-1:after {
+    content: ' ';
     display: block;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
-    opacity: 0.6;
+    z-index: -1;
+    opacity: 0.5;
     background-image: url('http://placekitten.com/1500/1000');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
 }
 
 #main-tile-2 {
+  @extend #main-tile-1;
+}
+
+#main-tile-3 {
+  @extend #main-tile-1;
+}
+
+#main-tile-4 {
   @extend #main-tile-1;
 }
