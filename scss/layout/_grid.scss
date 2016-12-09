@@ -8,22 +8,17 @@
 #main-tile-1 {
   @include span-columns(12);
   @include tile (pink);
+  @include picture (100%, 100%);
   display: block;
   position: relative;
   overflow: hidden;
-  width: 100%;
-  height:100%;
   @media screen and (min-width: 600px) {
     @include span-columns(6 of 12);
   }
   img {
-    padding: 10%;
-    width: 100%;
-    height: 100%;
+    @include picture(100%, 100%, 10%);
     @media screen and (min-width: 600px) {
-      padding:0;
-      width: 100%;
-      height: 100%;
+      @include picture(100%, 100%, 0);
     }
   }
   h1 {

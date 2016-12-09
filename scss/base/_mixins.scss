@@ -24,3 +24,9 @@
   margin: $margin;
   width: $width;
 }
+
+@mixin picture($picwidth, $picheight, $picpadding: null) {
+  width: $picwidth;
+  height: $picheight;
+  padding: $picpadding;
+}
