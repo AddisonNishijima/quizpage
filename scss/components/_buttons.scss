@@ -1,9 +1,11 @@
 .play {
   border-radius: $br;
-  background-color: none;
+  background-color: transparent;
   border: solid 1px $white;
   font-size: 1em;
   color: $white;
   padding: 5px;
+  display:block;
+  margin: 0 auto;
   margin-bottom: 10px;
 }

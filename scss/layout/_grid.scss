@@ -7,7 +7,7 @@
 
 #main-tile-1 {
   @include span-columns(12);
-  @include tile (pink);
+  @include tile ($golden);
   @include picture (100%, 100%);
   display: block;
   position: relative;
@@ -46,19 +46,6 @@
   }
 }
 
-// #main-tile-1:after {
-//     content: ' ';
-//     display: block;
-//     position: absolute;
-//     left: 0;
-//     top: 0;
-//     width: 100%;
-//     height: 100%;
-//     z-index: -1;
-//     opacity: 0.5;
-//     background-image: url('http://placekitten.com/1500/1000');
-// }
-
 #main-tile-2 {
   @extend #main-tile-1;
   background-color: $grey;
@@ -81,7 +68,7 @@
 
 #main-tile-4 {
   @extend #main-tile-1;
-  background-color: green;
+  background-color: $bloodred;
   &::after {
     background-image: url('#{$path-image}/twd.jpg');
   }
